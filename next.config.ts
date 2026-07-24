@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   typescript: { ignoreBuildErrors: true },
   async rewrites() {
+    if (!API_BASE) {
+      return [];
+    }
+
     return [
       {
         source: "/api/v1/:path*",
