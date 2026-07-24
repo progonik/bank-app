@@ -1,0 +1,366 @@
+{
+  "common": {
+    "success": "Muvaffaqiyatli",
+    "error": "Xatolik",
+    "synchronize": "Sinxronlash",
+    "add": "Qo'shish",
+    "download": "Yuklab olish",
+    "search": "Qidirish",
+    "filter": "Filtrlash",
+    "settings": "Sozlamalar",
+    "all": "Barchasi",
+    "clear": "Tozalash",
+    "free": "Bepul",
+    "vip": "VIP",
+    "active": "Aktiv",
+    "block": "Blok",
+    "undefined": "Aniqlanmadi",
+    "results": "Natijalar",
+    "of": "tadan",
+    "items": "ta",
+    "previous": "Avvalgi",
+    "next": "Keyingi",
+    "page": "Sahifa",
+    "pageNumber": "Sahifa raqami",
+    "retry": "Qayta urinish"
+  },
+  "auth": {
+    "login": "Kirish",
+    "logout": "Chiqish",
+    "username": "Login",
+    "password": "Parol",
+    "enterUsername": "Loginni kiriting",
+    "enterPassword": "Parolni kiriting",
+    "wrongCredentials": "Noto'g'ri login yoki parol"
+  },
+  "sidebar": {
+    "statistics": "Statistika",
+    "entrepreneurs": "Tadbirkorlar",
+    "users": "Foydalanuvchilar",
+    "database": "Malumotlar bazasi",
+    "cities": "Shaharlar",
+    "orgLegalForm": "Tashkiliy-huquqiy shakli",
+    "ifutCode": "IFUT kodi",
+    "district": "Tuman",
+    "token": "Token",
+    "integrations": "Integratsiyalar"
+  },
+  "user": {
+    "defaultName": "Foydalanuvchi",
+    "role": "Rol",
+    "account": "Hisob",
+    "payment": "To'lov",
+    "notifications": "Bildirishnomalar"
+  },
+  "entrepreneurs": {
+    "title": "Tadbirkorlar",
+    "add": "Qo'shish",
+    "searchPlaceholder": "Qidirish",
+    "dateFrom": "Sana dan",
+    "dateTo": "Sana gacha",
+    "ifutCode": "IFUT kodi",
+    "city": "Shahar",
+    "selectFromList": "Ro'yxatdan tanlang",
+    "confirm": "Tasdiqlash",
+    "columnVisibility": "Ustunlarni ko'rsatish",
+    "inn": "INN",
+    "legalName": "Yuridik shaxsning nomi",
+    "registrationAuthority": "Ro'yxatdan o'tkazuvchi organ",
+    "registrationDate": "O'tkazilgan sana",
+    "registrationNumber": "O'tkazilgan raqami",
+    "legalForm": "Tashkiliy-huquqiy shakli",
+    "dbibtCode": "DBIBT kodi",
+    "activityStatus": "Faollik holati",
+    "charterFund": "Ustav fondi",
+    "founders": "Ta'sischilar",
+    "email": "Elektron pochta",
+    "phone": "Aloqa telefoni",
+    "mhobtCode": "MHOBT kodi",
+    "address": "Manzil",
+    "directorName": "Rahbar FIO",
+    "enterInfo": "Malumot kiriting",
+    "cancel": "Bekor qilish",
+    "save": "Saqlash",
+    "edit": "Tahrirlash",
+    "delete": "O'chirish",
+    "deleteConfirm": "Ushbu tadbirkorni o'chirishga ishonchingiz komilmi?",
+    "createdAt": "Qo'shilgan sana",
+    "columns": {
+      "inn": "INN",
+      "legalName": "YURIDIK SHAXSNING NOMI",
+      "registrationAuthority": "RO'YXATDAN O'TKAZUVCHI ORGAN",
+      "registrationDate": "O'TKAZILGAN SANA",
+      "registrationNumber": "O'TKAZILGAN RAQAMI",
+      "legalForm": "TASHKILIY-HUQUQIY SHAKLI",
+      "ifutCode": "IFUT KODI",
+      "dbibtCode": "DBIBT KODI",
+      "activityStatus": "FAOLLIK HOLATI",
+      "charterFund": "USTAV FONDI",
+      "founders": "TA'SISCHILAR",
+      "email": "ELEKTRON POCHTA",
+      "phone": "ALOQA TELEFONI",
+      "mhobtCode": "MHOBT KODI",
+      "address": "MANZIL",
+      "directorName": "RAHBAR FIO",
+      "createdAt": "QO'SHILGAN SANA"
+    }
+  },
+  "workers": {
+    "title": "Ishchilar",
+    "searchPlaceholder": "Qidirish",
+    "category": "Kategoriya",
+    "categoryPlaceholder": "Kategoriyani tanlang",
+    "country": "Davlat",
+    "countryPlaceholder": "Davlatni tanlang",
+    "region": "Viloyat",
+    "regionPlaceholder": "Viloyatni tanlang",
+    "status": "Holati",
+    "statusPlaceholder": "Holatni tanlang",
+    "addWorker": "Qo'shish",
+    "addWorkerPlaceholder": "Ishchi qo'shish formasi tez orada qo'shiladi.",
+    "columnVisibility": "Ustunlarni ko'rsatish",
+    "uploadExcelFile": "Excel fayl yuklash",
+    "columns": {
+      "id": "ID",
+      "user": "FOYDALANUVCHI",
+      "phoneTelegram": "TELEFON/TELEGRAM",
+      "category": "KATEGORIYA",
+      "salary": "OYLIGI",
+      "tariff": "TARIF",
+      "country": "DAVLAT",
+      "region": "VILOYAT",
+      "registration": "REGISTRATSIYA",
+      "status": "HOLATI"
+    },
+    "roles": {
+      "officeWorker": "Ofis hodimi",
+      "unemployed": "Ishsiz",
+      "freelancer": "Freelancer",
+      "developer": "Dasturchi",
+      "designer": "Dizayner"
+    },
+    "categories": {
+      "uiUxDesigner": "UI/UX dizayner",
+      "graphicDesigner": "Grafik dizayner",
+      "developer": "Dasturchi",
+      "golang": "GoLang",
+      "translator": "Tarjimon",
+      "operator": "Operator",
+      "salesperson": "Sotuvchi"
+    },
+    "genders": {
+      "male": "Erkak",
+      "female": "Ayol",
+      "erkak": "Erkak",
+      "ayol": "Ayol",
+      "unknown": "Aniqlanmadi"
+    },
+    "countries": {
+      "uzbekistan": "O'zbekiston",
+      "o'zbekiston": "O'zbekiston"
+    },
+    "regions": {
+      "tashkentCity": "Toshkent sh.",
+      "toshkentsh": "Toshkent sh.",
+      "andijan": "Andijon"
+    },
+    "tariffTypes": {
+      "free": "Bepul",
+      "vip": "VIP"
+    },
+    "statuses": {
+      "active": "Aktiv",
+      "blocked": "Blok"
+    },
+    "jobStatuses": {
+      "actively_searching": "Aktiv qidirmoqda",
+      "open_to_offers": "Takliflarga ochiq",
+      "not_searching": "Qidirmaydi"
+    },
+    "activityTypes": {
+      "officeWorker": "Ofis hodimi",
+      "freelancer": "Freelancer",
+      "developer": "Dasturchi",
+      "designer": "Dizayner",
+      "operator": "Operator",
+      "salesperson": "Sotuvchi"
+    }
+  },
+  "vacancies": {
+    "title": "Vakansiyalar",
+    "searchPlaceholder": "Qidirish",
+    "category": "Kategoriya",
+    "categoryPlaceholder": "Kategoriyani tanlang",
+    "country": "Davlat",
+    "countryPlaceholder": "Davlatni tanlang",
+    "region": "Viloyat",
+    "regionPlaceholder": "Viloyatni tanlang",
+    "status": "Holati",
+    "statusPlaceholder": "Holatni tanlang",
+    "addVacancy": "Qo'shish",
+    "addVacancyPlaceholder": "Vakansiya qo'shish formasi tez orada qo'shiladi.",
+    "columnVisibility": "Ustunlarni ko'rsatish",
+    "columns": {
+      "name": "NOMI",
+      "salary": "SUMMA",
+      "country": "DAVLAT",
+      "candidates": "KONDIDATLAR",
+      "status": "HOLATI",
+      "date": "SANA",
+      "createdBy": "YARATDI"
+    },
+    "categories": {
+      "design": "Dizayn",
+      "development": "Dasturlash",
+      "sales": "Sotuv",
+      "administration": "Ma'muriyat"
+    },
+    "countries": {
+      "uzbekistan": "O'zbekiston"
+    },
+    "regions": {
+      "tashkent": "Toshkent",
+      "andijan": "Andijon",
+      "samarkand": "Samarqand"
+    },
+    "statuses": {
+      "active": "Aktiv",
+      "inactive": "Nofaol",
+      "closed": "Yopilgan"
+    }
+  },
+  "employers": {
+    "title": "Ish beruvchilar",
+    "searchPlaceholder": "Qidirish",
+    "category": "Kategoriya",
+    "categoryPlaceholder": "Kategoriyani tanlang",
+    "country": "Davlat",
+    "countryPlaceholder": "Davlatni tanlang",
+    "region": "Viloyat",
+    "regionPlaceholder": "Viloyatni tanlang",
+    "status": "Holati",
+    "statusPlaceholder": "Holatni tanlang",
+    "addEmployer": "Qo'shish",
+    "addEmployerPlaceholder": "Ish beruvchi qo'shish formasi tez orada qo'shiladi.",
+    "columnVisibility": "Ustunlarni ko'rsatish",
+    "tariffStandart": "Standart",
+    "columns": {
+      "employer": "ISH BERUVCHI",
+      "phoneTelegram": "TELEFON/TELEGRAM",
+      "tariff": "TARIF",
+      "brand": "BRAND",
+      "vacancies": "VAKANSIYALAR",
+      "country": "DAVLAT",
+      "regDate": "REG. DATE"
+    },
+    "categories": {
+      "uiUxDesigner": "UI/UX dizayner",
+      "developer": "Dasturchi",
+      "translator": "Tarjimon",
+      "operator": "Operator",
+      "salesperson": "Sotuvchi"
+    },
+    "countries": {
+      "uzbekistan": "O'zbekiston"
+    },
+    "regions": {
+      "tashkentCity": "Toshkent sh.",
+      "andijan": "Andijon"
+    },
+    "statuses": {
+      "active": "Aktiv",
+      "blocked": "Blok",
+      "standart": "Standart"
+    },
+    "tariffs": {
+      "free": "Bepul",
+      "vip": "VIP",
+      "standart": "Standart"
+    }
+  },
+  "cities": {
+    "title": "Shaharlar",
+    "add": "Qo'shish",
+    "edit": "Tahrirlash",
+    "delete": "O'chirish",
+    "deleteConfirm": "Ushbu shaharni o'chirishga ishonchingiz komilmi?",
+    "name": "Nomi",
+    "namePlaceholder": "Shahar nomini kiriting",
+    "cancel": "Bekor qilish",
+    "save": "Saqlash",
+    "searchPlaceholder": "Qidirish",
+    "columns": {
+      "name": "NOMI"
+    }
+  },
+  "foydalanuvchilar": {
+    "title": "Foydalanuvchilar",
+    "add": "Qo'shish",
+    "searchPlaceholder": "Qidirish",
+    "cancel": "Bekor qilish",
+    "save": "Saqlash",
+    "edit": "Tahrirlash",
+    "delete": "O'chirish",
+    "fullName": "Foydalanuvchi FIO",
+    "fullNamePlaceholder": "Foydalanuvchi FIO",
+    "role": "Lavozimi",
+    "rolePlaceholder": "Lavozimi",
+    "login": "Login",
+    "loginPlaceholder": "Login",
+    "password": "Parol",
+    "passwordPlaceholder": "Parolni kiriting",
+    "status": "Holati",
+    "statusActive": "Aktiv",
+    "statusBlocked": "Block",
+    "lastLoginTime": "Ohirgi kirish vaqti",
+    "columns": {
+      "fullName": "FOYDALANUVCHI FIO",
+      "role": "LAVOZIMI",
+      "login": "LOGIN",
+      "lastLogin": "OHIRGI KIRISH VAQTI",
+      "status": "HOLATI"
+    }
+  },
+  "workerDetail": {
+    "id": "ID",
+    "additionalInfo": "Qo'shimcha ma'lumot",
+    "tabs": {
+      "general": "Umumiy malumot",
+      "personal": "Shaxsiy malumotlar",
+      "resume": "Rezyumesi",
+      "personalPlaceholder": "Shaxsiy malumotlar — tez orada",
+      "resumePlaceholder": "Rezyume — tez orada"
+    },
+    "telegramId": "Telegram ID",
+    "registrationDate": "Registratsiya sana",
+    "status": "Holati",
+    "tariffType": "Tarif turi",
+    "professionalInfo": "Soxa malumotlari",
+    "jobStatus": "Holati",
+    "activityType": "Faoliyat turi",
+    "salary": "Hozirgi oyligi / Ortacha daromadi",
+    "specialization": "Mutaxassiligi",
+    "interests": "Qiziqishlari",
+    "experience": "Tajribasi",
+    "lastName": "Familiya",
+    "firstName": "Ism",
+    "phone": "Telefon raqami",
+    "patronymic": "Otasining ismi",
+    "gender": "Jinsi",
+    "country": "Davlat",
+    "nationality": "Millati",
+    "telegram": "Telegram",
+    "email": "E-mail pochta",
+    "region": "Viloyat",
+    "skills": "Ko'nikmalar",
+    "languages": "Tillar",
+    "aboutMe": "O'zim haqimda",
+    "yearsExp": "yil",
+    "yearsExperience": "yillik tajriba",
+    "workExperience": "Ish tajribasi",
+    "years": "yil",
+    "months": "oy",
+    "present": "hozirgacha",
+    "education": "Ta'lim"
+  }
+}

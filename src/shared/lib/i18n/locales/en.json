@@ -1,0 +1,362 @@
+{
+    "common": {
+        "success": "Success",
+        "error": "Error",
+        "synchronize": "Synchronize",
+        "add": "Add",
+        "download": "Download",
+        "search": "Search",
+        "filter": "Filter",
+        "settings": "Settings",
+        "all": "All",
+        "clear": "Clear",
+        "free": "Free",
+        "vip": "VIP",
+        "active": "Active",
+        "block": "Blocked",
+        "undefined": "Not specified",
+        "results": "Results",
+        "of": "of",
+        "items": "items",
+        "previous": "Previous",
+        "next": "Next",
+        "page": "Page",
+        "pageNumber": "Page number",
+        "retry": "Retry"
+    },
+    "auth": {
+        "login": "Login",
+        "logout": "Logout",
+        "username": "Username",
+        "password": "Password",
+        "enterUsername": "Enter Username",
+        "enterPassword": "Enter Password",
+        "wrongCredentials": "Incorrect username or password"
+    },
+    "sidebar": {
+        "statistics": "Statistics",
+        "entrepreneurs": "Entrepreneurs",
+        "users": "Users",
+        "database": "Database",
+        "cities": "Cities",
+        "orgLegalForm": "Organizational-legal form",
+        "ifutCode": "IFUT code",
+        "district": "District",
+        "token": "Token",
+        "integrations": "Integrations"
+    },
+    "user": {
+        "defaultName": "User",
+        "role": "Role",
+        "account": "Account",
+        "payment": "Payment",
+        "notifications": "Notifications"
+    },
+    "entrepreneurs": {
+        "title": "Entrepreneurs",
+        "add": "Add",
+        "searchPlaceholder": "Search",
+        "dateFrom": "Date from",
+        "dateTo": "Date to",
+        "ifutCode": "IFUT code",
+        "city": "City",
+        "selectFromList": "Select from list",
+        "confirm": "Confirm",
+        "columnVisibility": "Column visibility",
+        "inn": "INN",
+        "legalName": "Legal entity name",
+        "registrationAuthority": "Registration authority",
+        "registrationDate": "Registration date",
+        "registrationNumber": "Registration number",
+        "legalForm": "Legal form",
+        "dbibtCode": "DBIBT code",
+        "activityStatus": "Activity status",
+        "charterFund": "Charter fund",
+        "founders": "Founders",
+        "email": "Email",
+        "phone": "Phone",
+        "mhobtCode": "MHOBT code",
+        "address": "Address",
+        "directorName": "Director name",
+        "enterInfo": "Enter information",
+        "cancel": "Cancel",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "deleteConfirm": "Are you sure you want to delete this entrepreneur?",
+        "createdAt": "Created at",
+        "columns": {
+            "inn": "INN",
+            "legalName": "LEGAL ENTITY NAME",
+            "registrationAuthority": "REGISTRATION AUTHORITY",
+            "registrationDate": "REGISTRATION DATE",
+            "registrationNumber": "REGISTRATION NUMBER",
+            "legalForm": "LEGAL FORM",
+            "ifutCode": "IFUT CODE",
+            "dbibtCode": "DBIBT CODE",
+            "activityStatus": "ACTIVITY STATUS",
+            "charterFund": "CHARTER FUND",
+            "founders": "FOUNDERS",
+            "email": "EMAIL",
+            "phone": "PHONE",
+            "mhobtCode": "MHOBT CODE",
+            "address": "ADDRESS",
+            "directorName": "DIRECTOR NAME",
+            "createdAt": "CREATED AT"
+        }
+    },
+    "workers": {
+        "title": "Workers",
+        "searchPlaceholder": "Search",
+        "category": "Category",
+        "categoryPlaceholder": "Select category",
+        "country": "Country",
+        "countryPlaceholder": "Select country",
+        "region": "Region",
+        "regionPlaceholder": "Select region",
+        "status": "Status",
+        "statusPlaceholder": "Select status",
+        "addWorker": "Add",
+        "addWorkerPlaceholder": "Add worker form coming soon.",
+        "columnVisibility": "Column visibility",
+        "uploadExcelFile": "Upload Excel file",
+        "columns": {
+            "id": "ID",
+            "user": "USER",
+            "phoneTelegram": "PHONE/TELEGRAM",
+            "category": "CATEGORY",
+            "salary": "SALARY",
+            "tariff": "TARIFF",
+            "country": "COUNTRY",
+            "region": "REGION",
+            "registration": "REGISTRATION",
+            "status": "STATUS"
+        },
+        "roles": {
+            "officeWorker": "Office worker",
+            "unemployed": "Unemployed",
+            "freelancer": "Freelancer",
+            "developer": "Developer",
+            "designer": "Designer"
+        },
+        "categories": {
+            "uiUxDesigner": "UI/UX Designer",
+            "graphicDesigner": "Graphic Designer",
+            "developer": "Developer",
+            "golang": "GoLang",
+            "translator": "Translator",
+            "operator": "Operator",
+            "salesperson": "Salesperson"
+        },
+        "genders": {
+            "male": "Male",
+            "female": "Female",
+            "unknown": "Not specified"
+        },
+        "countries": {
+            "uzbekistan": "Uzbekistan"
+        },
+        "regions": {
+            "tashkentCity": "Tashkent city",
+            "andijan": "Andijan"
+        },
+        "tariffTypes": {
+            "free": "Free",
+            "vip": "VIP"
+        },
+        "statuses": {
+            "active": "Active",
+            "blocked": "Blocked"
+        },
+        "jobStatuses": {
+            "actively_searching": "Actively searching",
+            "open_to_offers": "Open to offers",
+            "not_searching": "Not searching"
+        },
+        "activityTypes": {
+            "officeWorker": "Office worker",
+            "freelancer": "Freelancer",
+            "developer": "Developer",
+            "designer": "Designer",
+            "operator": "Operator",
+            "salesperson": "Salesperson"
+        }
+    },
+    "vacancies": {
+        "title": "Vacancies",
+        "searchPlaceholder": "Search",
+        "category": "Category",
+        "categoryPlaceholder": "Select category",
+        "country": "Country",
+        "countryPlaceholder": "Select country",
+        "region": "Region",
+        "regionPlaceholder": "Select region",
+        "status": "Status",
+        "statusPlaceholder": "Select status",
+        "addVacancy": "Add",
+        "addVacancyPlaceholder": "Add vacancy form coming soon.",
+        "columnVisibility": "Column visibility",
+        "columns": {
+            "name": "NAME",
+            "salary": "AMOUNT",
+            "country": "COUNTRY",
+            "candidates": "CANDIDATES",
+            "status": "STATUS",
+            "date": "DATE",
+            "createdBy": "CREATED BY"
+        },
+        "categories": {
+            "design": "Design",
+            "development": "Development",
+            "sales": "Sales",
+            "administration": "Administration"
+        },
+        "countries": {
+            "uzbekistan": "Uzbekistan"
+        },
+        "regions": {
+            "tashkent": "Tashkent",
+            "andijan": "Andijan",
+            "samarkand": "Samarkand"
+        },
+        "statuses": {
+            "active": "Active",
+            "inactive": "Inactive",
+            "closed": "Closed"
+        }
+    },
+    "employers": {
+        "title": "Employers",
+        "searchPlaceholder": "Search",
+        "category": "Category",
+        "categoryPlaceholder": "Select category",
+        "country": "Country",
+        "countryPlaceholder": "Select country",
+        "region": "Region",
+        "regionPlaceholder": "Select region",
+        "status": "Status",
+        "statusPlaceholder": "Select status",
+        "addEmployer": "Add",
+        "addEmployerPlaceholder": "Add employer form coming soon.",
+        "columnVisibility": "Column visibility",
+        "tariffStandart": "Standard",
+        "columns": {
+            "employer": "EMPLOYER",
+            "phoneTelegram": "PHONE/TELEGRAM",
+            "tariff": "TARIFF",
+            "brand": "BRAND",
+            "vacancies": "VACANCIES",
+            "country": "COUNTRY",
+            "regDate": "REG. DATE"
+        },
+        "categories": {
+            "uiUxDesigner": "UI/UX Designer",
+            "developer": "Developer",
+            "translator": "Translator",
+            "operator": "Operator",
+            "salesperson": "Salesperson"
+        },
+        "countries": {
+            "uzbekistan": "Uzbekistan"
+        },
+        "regions": {
+            "tashkentCity": "Tashkent city",
+            "andijan": "Andijan"
+        },
+        "statuses": {
+            "active": "Active",
+            "blocked": "Blocked",
+            "standart": "Standard"
+        },
+        "tariffs": {
+            "free": "Free",
+            "vip": "VIP",
+            "standart": "Standard"
+        }
+    },
+    "cities": {
+        "title": "Cities",
+        "add": "Add",
+        "edit": "Edit",
+        "delete": "Delete",
+        "deleteConfirm": "Are you sure you want to delete this city?",
+        "name": "Name",
+        "namePlaceholder": "Enter city name",
+        "cancel": "Cancel",
+        "save": "Save",
+        "searchPlaceholder": "Search",
+        "columns": {
+            "name": "NAME"
+        }
+    },
+    "foydalanuvchilar": {
+        "title": "Users",
+        "add": "Add",
+        "searchPlaceholder": "Search",
+        "cancel": "Cancel",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "fullName": "Full Name",
+        "fullNamePlaceholder": "Full Name",
+        "role": "Position",
+        "rolePlaceholder": "Position",
+        "login": "Login",
+        "loginPlaceholder": "Login",
+        "password": "Password",
+        "passwordPlaceholder": "Enter password",
+        "status": "Status",
+        "statusActive": "Active",
+        "statusBlocked": "Blocked",
+        "lastLoginTime": "Last Login Time",
+        "columns": {
+            "fullName": "FULL NAME",
+            "role": "POSITION",
+            "login": "LOGIN",
+            "lastLogin": "LAST LOGIN TIME",
+            "status": "STATUS"
+        }
+    },
+    "workerDetail": {
+        "id": "ID",
+        "additionalInfo": "Additional information",
+        "tabs": {
+            "general": "General information",
+            "personal": "Personal information",
+            "resume": "Resume",
+            "personalPlaceholder": "Personal information - coming soon",
+            "resumePlaceholder": "Resume - coming soon"
+        },
+        "telegramId": "Telegram ID",
+        "registrationDate": "Registration date",
+        "status": "Status",
+        "tariffType": "Tariff type",
+        "professionalInfo": "Professional information",
+        "jobStatus": "Job status",
+        "activityType": "Activity type",
+        "salary": "Current salary / Average income",
+        "specialization": "Specialization",
+        "interests": "Interests",
+        "experience": "Experience",
+        "lastName": "Last name",
+        "firstName": "First name",
+        "phone": "Phone number",
+        "patronymic": "Patronymic",
+        "gender": "Gender",
+        "country": "Country",
+        "nationality": "Nationality",
+        "telegram": "Telegram",
+        "email": "Email",
+        "region": "Region",
+        "skills": "Skills",
+        "languages": "Languages",
+        "aboutMe": "About me",
+        "yearsExp": "years",
+        "yearsExperience": "years experience",
+        "workExperience": "Work experience",
+        "years": "years",
+        "months": "months",
+        "present": "present",
+        "education": "Education"
+    }
+}

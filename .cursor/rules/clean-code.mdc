@@ -1,0 +1,43 @@
+---
+alwaysApply: true
+---
+# Clean Code Standards
+
+## Principles
+
+- **SRP**: One responsibility per function, hook, component
+- **DRY**: Extract repeated logic; no duplicated strings/numbers
+- **Named constants**: No magic numbers/strings; use `UPPER_SNAKE_CASE`
+- **Small units**: Functions &lt;20 lines; components &lt;150 lines
+- **Composition**: Extract subcomponents; use custom hooks for logic
+- **Explicit over implicit**: Named exports; explicit types; no `any`
+
+## Structure
+
+- **Constants** at top or in `constants.ts`
+- **Types** in `types.ts` or colocated
+- **Hooks** before component; one concern per hook
+- **Handlers**: Named functions, not inline arrow functions in JSX
+
+## React/TypeScript
+
+```typescript
+// ❌ BAD: inline handler, magic string
+<Button onClick={() => setPage(1)}>Reset</Button>
+
+// ✅ GOOD: named handler, constant
+const handleReset = useCallback(() => setPage(1), []);
+<Button onClick={handleReset}>{LABELS.RESET}</Button>
+```
+
+- Extract `useX` hooks for state + derived values
+- Memoize with `useMemo`/`useCallback` when deps change
+- Prefer `useCallback` for handlers passed as props
+
+## FSD
+
+- `shared/` – no business logic
+- `entities/` – business entities, types, base data
+- `features/` – user actions, composed UI
+- `widgets/` – page sections; compose features
+- `pages/` – composition only; minimal logic

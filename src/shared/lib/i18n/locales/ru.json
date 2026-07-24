@@ -1,0 +1,364 @@
+{
+  "common": {
+    "success": "Успешно",
+    "error": "Ошибка",
+    "synchronize": "Синхронизировать",
+    "add": "Добавить",
+    "download": "Скачать",
+    "search": "Поиск",
+    "filter": "Фильтр",
+    "settings": "Настройки",
+    "all": "Все",
+    "clear": "Очистить",
+    "free": "Бесплатно",
+    "vip": "VIP",
+    "active": "Активен",
+    "block": "Заблокирован",
+    "undefined": "Не указано",
+    "results": "Результаты",
+    "of": "из",
+    "items": "шт",
+    "previous": "Предыдущая",
+    "next": "Следующая",
+    "page": "Страница",
+    "pageNumber": "Номер страницы",
+    "retry": "Повторить"
+  },
+  "auth": {
+    "login": "Войти",
+    "logout": "Выйти",
+    "username": "Логин",
+    "password": "Пароль",
+    "enterUsername": "Введите Логин",
+    "enterPassword": "Введите Пароль",
+    "wrongCredentials": "Неправильный логин или пароль"
+  },
+  "sidebar": {
+    "statistics": "Статистика",
+    "entrepreneurs": "Предприниматели",
+    "users": "Пользователи",
+    "database": "База данных",
+    "cities": "Города",
+    "orgLegalForm": "Организационно-правовая форма",
+    "ifutCode": "Код ИФУТ",
+    "district": "Район",
+    "token": "Токен",
+    "integrations": "Интеграции"
+  },
+  "user": {
+    "defaultName": "Пользователь",
+    "role": "Роль",
+    "account": "Аккаунт",
+    "payment": "Оплата",
+    "notifications": "Уведомления"
+  },
+  "entrepreneurs": {
+    "title": "Предприниматели",
+    "add": "Добавить",
+    "searchPlaceholder": "Поиск",
+    "dateFrom": "Дата от",
+    "dateTo": "Дата до",
+    "ifutCode": "Код ИФУТ",
+    "city": "Город",
+    "selectFromList": "Выберите из списка",
+    "confirm": "Подтвердить",
+    "columnVisibility": "Видимость столбцов",
+    "inn": "ИНН",
+    "legalName": "Название юридического лица",
+    "registrationAuthority": "Регистрирующий орган",
+    "registrationDate": "Дата регистрации",
+    "registrationNumber": "Номер регистрации",
+    "legalForm": "Организационно-правовая форма",
+    "dbibtCode": "Код ДБИБТ",
+    "activityStatus": "Статус деятельности",
+    "charterFund": "Уставной фонд",
+    "founders": "Учредители",
+    "email": "Электронная почта",
+    "phone": "Контактный телефон",
+    "mhobtCode": "Код МХОБТ",
+    "address": "Адрес",
+    "directorName": "ФИО руководителя",
+    "enterInfo": "Введите информацию",
+    "cancel": "Отменить",
+    "save": "Сохранить",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "deleteConfirm": "Вы уверены, что хотите удалить этого предпринимателя?",
+    "createdAt": "Дата добавления",
+    "columns": {
+      "inn": "ИНН",
+      "legalName": "НАЗВАНИЕ ЮР. ЛИЦА",
+      "registrationAuthority": "РЕГИСТРИРУЮЩИЙ ОРГАН",
+      "registrationDate": "ДАТА РЕГИСТРАЦИИ",
+      "registrationNumber": "НОМЕР РЕГИСТРАЦИИ",
+      "legalForm": "ОРГ.-ПРАВОВАЯ ФОРМА",
+      "ifutCode": "КОД ИФУТ",
+      "dbibtCode": "КОД ДБИБТ",
+      "activityStatus": "СТАТУС",
+      "charterFund": "УСТАВНОЙ ФОНД",
+      "founders": "УЧРЕДИТЕЛИ",
+      "email": "ЭЛ. ПОЧТА",
+      "phone": "ТЕЛЕФОН",
+      "mhobtCode": "КОД МХОБТ",
+      "address": "АДРЕС",
+      "directorName": "ФИО РУКОВОДИТЕЛЯ",
+      "createdAt": "ДАТА ДОБАВЛЕНИЯ"
+    }
+  },
+  "workers": {
+    "title": "Работники",
+    "searchPlaceholder": "Поиск",
+    "category": "Категория",
+    "categoryPlaceholder": "Выберите категорию",
+    "country": "Страна",
+    "countryPlaceholder": "Выберите страну",
+    "region": "Регион",
+    "regionPlaceholder": "Выберите регион",
+    "status": "Статус",
+    "statusPlaceholder": "Выберите статус",
+    "addWorker": "Добавить",
+    "addWorkerPlaceholder": "Форма добавления работника скоро будет.",
+    "columnVisibility": "Видимость столбцов",
+    "uploadExcelFile": "Загрузить Excel файл",
+    "columns": {
+      "id": "ID",
+      "user": "ПОЛЬЗОВАТЕЛЬ",
+      "phoneTelegram": "ТЕЛЕФОН/TELEGRAM",
+      "category": "КАТЕГОРИЯ",
+      "salary": "ЗАРПЛАТА",
+      "tariff": "ТАРИФ",
+      "country": "СТРАНА",
+      "region": "РЕГИОН",
+      "registration": "РЕГИСТРАЦИЯ",
+      "status": "СТАТУС"
+    },
+    "roles": {
+      "officeWorker": "Офисный работник",
+      "unemployed": "Безработный",
+      "freelancer": "Фрилансер",
+      "developer": "Разработчик",
+      "designer": "Дизайнер"
+    },
+    "categories": {
+      "uiUxDesigner": "UI/UX дизайнер",
+      "graphicDesigner": "Графический дизайнер",
+      "developer": "Разработчик",
+      "golang": "GoLang",
+      "translator": "Переводчик",
+      "operator": "Оператор",
+      "salesperson": "Продавец"
+    },
+    "genders": {
+      "male": "Мужчина",
+      "female": "Женщина",
+      "erkak": "Мужчина",
+      "ayol": "Женщина",
+      "unknown": "Не указано"
+    },
+    "countries": {
+      "uzbekistan": "Узбекистан"
+    },
+    "regions": {
+      "tashkentCity": "г. Ташкент",
+      "andijan": "Андижан"
+    },
+    "tariffTypes": {
+      "free": "Бесплатно",
+      "vip": "VIP"
+    },
+    "statuses": {
+      "active": "Активен",
+      "blocked": "Заблокирован"
+    },
+    "jobStatuses": {
+      "actively_searching": "Активно ищет",
+      "open_to_offers": "Открыт к предложениям",
+      "not_searching": "Не ищет"
+    },
+    "activityTypes": {
+      "officeWorker": "Офисный работник",
+      "freelancer": "Фрилансер",
+      "developer": "Разработчик",
+      "designer": "Дизайнер",
+      "operator": "Оператор",
+      "salesperson": "Продавец"
+    }
+  },
+  "vacancies": {
+    "title": "Вакансии",
+    "searchPlaceholder": "Поиск",
+    "category": "Категория",
+    "categoryPlaceholder": "Выберите категорию",
+    "country": "Страна",
+    "countryPlaceholder": "Выберите страну",
+    "region": "Регион",
+    "regionPlaceholder": "Выберите регион",
+    "status": "Статус",
+    "statusPlaceholder": "Выберите статус",
+    "addVacancy": "Добавить",
+    "addVacancyPlaceholder": "Форма добавления вакансии скоро будет.",
+    "columnVisibility": "Видимость столбцов",
+    "columns": {
+      "name": "НАЗВАНИЕ",
+      "salary": "СУММА",
+      "country": "СТРАНА",
+      "candidates": "КАНДИДАТЫ",
+      "status": "СТАТУС",
+      "date": "ДАТА",
+      "createdBy": "СОЗДАЛ"
+    },
+    "categories": {
+      "design": "Дизайн",
+      "development": "Разработка",
+      "sales": "Продажи",
+      "administration": "Администрирование"
+    },
+    "countries": {
+      "uzbekistan": "Узбекистан"
+    },
+    "regions": {
+      "tashkent": "Ташкент",
+      "andijan": "Андижан",
+      "samarkand": "Самарканд"
+    },
+    "statuses": {
+      "active": "Активна",
+      "inactive": "Неактивна",
+      "closed": "Закрыта"
+    }
+  },
+  "employers": {
+    "title": "Работодатели",
+    "searchPlaceholder": "Поиск",
+    "category": "Категория",
+    "categoryPlaceholder": "Выберите категорию",
+    "country": "Страна",
+    "countryPlaceholder": "Выберите страну",
+    "region": "Регион",
+    "regionPlaceholder": "Выберите регион",
+    "status": "Статус",
+    "statusPlaceholder": "Выберите статус",
+    "addEmployer": "Добавить",
+    "addEmployerPlaceholder": "Форма добавления работодателя скоро будет.",
+    "columnVisibility": "Видимость столбцов",
+    "tariffStandart": "Стандарт",
+    "columns": {
+      "employer": "РАБОТОДАТЕЛЬ",
+      "phoneTelegram": "ТЕЛЕФОН/TELEGRAM",
+      "tariff": "ТАРИФ",
+      "brand": "БРЕНД",
+      "vacancies": "ВАКАНСИИ",
+      "country": "СТРАНА",
+      "regDate": "ДАТА РЕГ."
+    },
+    "categories": {
+      "uiUxDesigner": "UI/UX дизайнер",
+      "developer": "Разработчик",
+      "translator": "Переводчик",
+      "operator": "Оператор",
+      "salesperson": "Продавец"
+    },
+    "countries": {
+      "uzbekistan": "Узбекистан"
+    },
+    "regions": {
+      "tashkentCity": "г. Ташкент",
+      "andijan": "Андижан"
+    },
+    "statuses": {
+      "active": "Активен",
+      "blocked": "Заблокирован",
+      "standart": "Стандарт"
+    },
+    "tariffs": {
+      "free": "Бесплатно",
+      "vip": "VIP",
+      "standart": "Стандарт"
+    }
+  },
+  "cities": {
+    "title": "Города",
+    "add": "Добавить",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "deleteConfirm": "Вы уверены, что хотите удалить этот город?",
+    "name": "Название",
+    "namePlaceholder": "Введите название города",
+    "cancel": "Отменить",
+    "save": "Сохранить",
+    "searchPlaceholder": "Поиск",
+    "columns": {
+      "name": "НАЗВАНИЕ"
+    }
+  },
+  "foydalanuvchilar": {
+    "title": "Пользователи",
+    "add": "Добавить",
+    "searchPlaceholder": "Поиск",
+    "cancel": "Отменить",
+    "save": "Сохранить",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "fullName": "ФИО пользователя",
+    "fullNamePlaceholder": "ФИО пользователя",
+    "role": "Должность",
+    "rolePlaceholder": "Должность",
+    "login": "Логин",
+    "loginPlaceholder": "Логин",
+    "password": "Пароль",
+    "passwordPlaceholder": "Введите пароль",
+    "status": "Статус",
+    "statusActive": "Активен",
+    "statusBlocked": "Заблокирован",
+    "lastLoginTime": "Последний вход",
+    "columns": {
+      "fullName": "ФИО ПОЛЬЗОВАТЕЛЯ",
+      "role": "ДОЛЖНОСТЬ",
+      "login": "ЛОГИН",
+      "lastLogin": "ПОСЛЕДНИЙ ВХОД",
+      "status": "СТАТУС"
+    }
+  },
+  "workerDetail": {
+    "id": "ID",
+    "additionalInfo": "Дополнительная информация",
+    "tabs": {
+      "general": "Общая информация",
+      "personal": "Личные данные",
+      "resume": "Резюме",
+      "personalPlaceholder": "Личные данные — скоро",
+      "resumePlaceholder": "Резюме — скоро"
+    },
+    "telegramId": "Telegram ID",
+    "registrationDate": "Дата регистрации",
+    "status": "Статус",
+    "tariffType": "Тип тарифа",
+    "professionalInfo": "Сведения о сфере",
+    "jobStatus": "Статус",
+    "activityType": "Тип деятельности",
+    "salary": "Текущая зарплата / Средний доход",
+    "specialization": "Специализация",
+    "interests": "Интересы",
+    "experience": "Опыт",
+    "lastName": "Фамилия",
+    "firstName": "Имя",
+    "phone": "Номер телефона",
+    "patronymic": "Очество",
+    "gender": "Пол",
+    "country": "Страна",
+    "nationality": "Национальность",
+    "telegram": "Telegram",
+    "email": "E-mail почта",
+    "region": "Область",
+    "skills": "Навыки",
+    "languages": "Языки",
+    "aboutMe": "Обо мне",
+    "yearsExp": "лет",
+    "yearsExperience": "лет опыта",
+    "workExperience": "Опыт работы",
+    "years": "лет",
+    "months": "месяцев",
+    "present": "по настоящее время",
+    "education": "Образование"
+  }
+}
