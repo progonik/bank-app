@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { createTranslator } from "@shared/lib/i18n";
 import { useI18nStore } from "@shared/lib/i18n";
 import { useQueryClient } from "@tanstack/react-query";
@@ -9,8 +9,6 @@ import {
   createEntrepreneursColumns,
   entrepreneursQueryKeys,
   useEntrepreneursPageState,
-  exportEntrepreneursToXlsx,
-  downloadXlsx,
 } from "../../model";
 import {
   FILTER_BAR_BG,
@@ -29,7 +27,10 @@ import {
   Dialog,
   DialogContent,
 } from "@shared/ui/dialog";
-import { deleteEntrepreneur } from "@shared/api/entrepreneurs";
+import {
+  deleteEntrepreneur,
+  downloadEntrepreneursExcel,
+} from "@shared/api/entrepreneurs";
 import { successToast, errorToast } from "@shared/lib/toast";
 import { EntrepreneursRowActions } from "../entrepreneurs-row-actions";
 import { AddEntrepreneurDialog } from "../add-entrepreneur-dialog";
@@ -41,6 +42,7 @@ export function EntrepreneursPage() {
   const language = useI18nStore((s) => s.language);
   const t = createTranslator(language);
   const queryClient = useQueryClient();
+  const [isDownloading, setIsDownloading] = useState(false);
 
   const pageState = useEntrepreneursPageState();
   const {
@@ -106,19 +108,31 @@ export function EntrepreneursPage() {
     setFilterPopoverOpen((prev) => !prev);
   }, [setFilterPopoverOpen]);
 
-  const handleDownload = useCallback(() => {
-    const columnLabels: Record<string, string> = {};
-    allColumns.forEach((col) => {
-      columnLabels[col.key] = t(`entrepreneurs.columns.${col.key}`);
-    });
-    const wb = exportEntrepreneursToXlsx(
-      entrepreneurs,
-      visibleColumns,
-      columnLabels
-    );
-    const filename = `entrepreneurs-${new Date().toISOString().slice(0, 10)}.xlsx`;
-    downloadXlsx(wb, filename);
-  }, [entrepreneurs, visibleColumns, allColumns, t]);
+  const handleDownload = useCallback(async () => {
+    if (isDownloading) return;
+
+    try {
+      setIsDownloading(true);
+      const blob = await downloadEntrepreneursExcel({
+        ...(search?.trim() && { legal_name: search.trim() }),
+        ...(dateFrom?.trim() && { date_from: dateFrom.trim() }),
+        ...(dateTo?.trim() && { date_to: dateTo.trim() }),
+      });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `entrepreneurs-${new Date().toISOString().slice(0, 10)}.xlsx`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+      successToast(t("common.success"));
+    } catch {
+      errorToast(t("common.error"));
+    } finally {
+      setIsDownloading(false);
+    }
+  }, [dateFrom, dateTo, isDownloading, search, t]);
 
   const toolbarActions = useMemo(
     () => (

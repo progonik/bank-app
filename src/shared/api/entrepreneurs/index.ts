@@ -1,5 +1,6 @@
 export {
   getEntrepreneurs,
+  downloadEntrepreneursExcel,
   getEntrepreneurById,
   createEntrepreneur,
   updateEntrepreneur,

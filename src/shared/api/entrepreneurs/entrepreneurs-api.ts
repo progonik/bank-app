@@ -8,9 +8,10 @@ import type {
 
 const ENTREPRENEURS_ENDPOINT = "/entrepreneurs";
 
-export async function getEntrepreneurs(
-  params: EntrepreneursListParams
-): Promise<EntrepreneursListResponse> {
+function buildEntrepreneursSearchParams(
+  params: EntrepreneursListParams,
+  includePagination: boolean
+): URLSearchParams {
   const searchParams = new URLSearchParams();
 
   if (params.legal_name?.trim()) {
@@ -31,18 +32,40 @@ export async function getEntrepreneurs(
   if (params.date_to?.trim()) {
     searchParams.set("date_to", params.date_to.trim());
   }
-  if (params.limit != null) {
+  if (includePagination && params.limit != null) {
     searchParams.set("limit", String(params.limit));
   }
-  if (params.offset != null) {
+  if (includePagination && params.offset != null) {
     searchParams.set("offset", String(params.offset));
   }
 
+  return searchParams;
+}
+
+export async function getEntrepreneurs(
+  params: EntrepreneursListParams
+): Promise<EntrepreneursListResponse> {
+  const searchParams = buildEntrepreneursSearchParams(params, true);
   const query = searchParams.toString();
   const url = query ? `${ENTREPRENEURS_ENDPOINT}?${query}` : ENTREPRENEURS_ENDPOINT;
 
   const response = await httpClient.get<EntrepreneursListResponse>(url);
   return response as EntrepreneursListResponse;
+}
+
+export async function downloadEntrepreneursExcel(
+  params: EntrepreneursListParams
+): Promise<Blob> {
+  const searchParams = buildEntrepreneursSearchParams(params, false);
+  const query = searchParams.toString();
+  const url = query
+    ? `${ENTREPRENEURS_ENDPOINT}/export.xlsx?${query}`
+    : `${ENTREPRENEURS_ENDPOINT}/export.xlsx`;
+
+  const response = await httpClient.get<Blob>(url, {
+    responseType: "blob",
+  });
+  return response as Blob;
 }
 
 export async function getEntrepreneurById(
