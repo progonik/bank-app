@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { AlertCircleIcon, Loader2 } from "lucide-react";
+import { AlertCircleIcon, Eye, EyeOff, Loader2 } from "lucide-react";
 import ReCAPTCHA from "react-google-recaptcha"
 import { cn } from "@shared/lib/utils";
 import { successToast, errorToast } from "@shared/lib/toast";
@@ -27,6 +27,7 @@ export function LoginForm() {
 
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const [isLoading, setIsLoading] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -118,14 +119,28 @@ export function LoginForm() {
 
           <div className="mt-4">
             <p className="form-label">{t("auth.password")}</p>
-            <Input
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              type="password"
-              placeholder={t("auth.enterPassword")}
-              className="form-input"
-            />
+            <div className="relative">
+              <Input
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                type={showPassword ? "text" : "password"}
+                placeholder={t("auth.enterPassword")}
+                className="form-input pr-12"
+              />
+              <button
+                type="button"
+                aria-label={showPassword ? "Hide password" : "Show password"}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-[#64748B] transition hover:text-[#314158]"
+                onClick={() => setShowPassword((value) => !value)}
+              >
+                {showPassword ? (
+                  <EyeOff className="h-5 w-5" />
+                ) : (
+                  <Eye className="h-5 w-5" />
+                )}
+              </button>
+            </div>
           </div>
 
           {/* RECAPTCHA */}
