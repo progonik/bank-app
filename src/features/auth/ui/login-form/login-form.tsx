@@ -15,8 +15,7 @@ import { performMockLogin } from "@features/auth/model/mock-auth";
 import { loginWithCredentials } from "@features/auth/api/login";
 
 const useMockAuth = (): boolean =>
-  process.env.NEXT_PUBLIC_MOCK_AUTH === "true" ||
-  !process.env.NEXT_PUBLIC_API_BASE_URL;
+  process.env.NEXT_PUBLIC_MOCK_AUTH === "true";
 
 const RECAPTCHA_SITE_KEY =
   process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "";
