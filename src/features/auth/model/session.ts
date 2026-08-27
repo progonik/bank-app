@@ -14,6 +14,9 @@ function clearAuthCookies(): void {
 export function persistAuthSession(data: AuthUserData): void {
   localStorage.setItem("accessToken", data.access_token);
   localStorage.setItem("refreshToken", data.refresh_token);
+  if (data.device_id) {
+    localStorage.setItem("deviceId", data.device_id);
+  }
   localStorage.setItem("userData", JSON.stringify(data));
   setAuthCookies(data.access_token, data.refresh_token);
 }
@@ -29,6 +32,7 @@ export function clearSession(): void {
   if (typeof window === "undefined") return;
   localStorage.removeItem("accessToken");
   localStorage.removeItem("refreshToken");
+  localStorage.removeItem("deviceId");
   localStorage.removeItem("userData");
   localStorage.removeItem("userRole");
   clearAuthCookies();

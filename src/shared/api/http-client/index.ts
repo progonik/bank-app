@@ -26,9 +26,12 @@ function getDeviceId(): string {
   return deviceId;
 }
 
-function persistTokens(accessToken: string, refreshToken: string) {
+function persistTokens(accessToken: string, refreshToken: string, deviceId?: string) {
   localStorage.setItem("accessToken", accessToken);
   localStorage.setItem("refreshToken", refreshToken);
+  if (deviceId) {
+    localStorage.setItem("deviceId", deviceId);
+  }
   document.cookie = `accessToken=${accessToken}; path=/;`;
   document.cookie = `refreshToken=${refreshToken}; path=/;`;
 }
@@ -36,6 +39,7 @@ function persistTokens(accessToken: string, refreshToken: string) {
 function clearTokens() {
   localStorage.removeItem("accessToken");
   localStorage.removeItem("refreshToken");
+  localStorage.removeItem("deviceId");
   localStorage.removeItem("userData");
   localStorage.removeItem("userRole");
   document.cookie = `accessToken=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT`;
@@ -108,12 +112,13 @@ const createHttpClient = (): AxiosInstance => {
         const data = response.data;
         const newAccessToken = data.access_token ?? data.data?.access_token;
         const newRefreshToken = data.refresh_token ?? data.data?.refresh_token ?? refreshToken;
+        const newDeviceId = data.device_id ?? data.data?.device_id;
 
         if (!newAccessToken) {
           throw new Error("No access token in refresh response");
         }
 
-        persistTokens(newAccessToken, newRefreshToken);
+        persistTokens(newAccessToken, newRefreshToken, newDeviceId);
         processQueue(null, newAccessToken);
 
         (originalRequest.headers as Record<string, string>)["Authorization"] = `Bearer ${newAccessToken}`;
