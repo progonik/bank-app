@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Loader2 } from "lucide-react";
 import { Button } from "@shared/ui";
 import { ICON_BUTTON_CLASS } from "../shared/constants";
 import type { TranslateFn } from "../../model/types";
@@ -9,6 +10,7 @@ import { cn } from "@shared/lib/utils";
 interface EntrepreneursTableToolbarProps {
   t: TranslateFn;
   filterBarVisible: boolean;
+  isDownloading?: boolean;
   onFilterBarToggle: () => void;
   onDownload?: () => void;
 }
@@ -16,6 +18,7 @@ interface EntrepreneursTableToolbarProps {
 export function EntrepreneursTableToolbar({
   t,
   filterBarVisible,
+  isDownloading = false,
   onFilterBarToggle,
   onDownload,
 }: EntrepreneursTableToolbarProps) {
@@ -30,9 +33,14 @@ export function EntrepreneursTableToolbar({
         variant="outline"
         className={ICON_BUTTON_CLASS}
         aria-label={t("common.download")}
+        disabled={isDownloading}
         onClick={onDownload}
       >
-        <Image src="/icons/download.svg" alt="" width={20} height={20} />
+        {isDownloading ? (
+          <Loader2 className="h-5 w-5 animate-spin text-[#64748B]" />
+        ) : (
+          <Image src="/icons/download.svg" alt="" width={20} height={20} />
+        )}
       </Button>
 
       <Button

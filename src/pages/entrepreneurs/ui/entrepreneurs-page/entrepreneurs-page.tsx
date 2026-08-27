@@ -139,11 +139,12 @@ export function EntrepreneursPage() {
       <EntrepreneursTableToolbar
         t={t}
         filterBarVisible={filterPopoverOpen}
+        isDownloading={isDownloading}
         onFilterBarToggle={handleFilterBarToggle}
         onDownload={handleDownload}
       />
     ),
-    [t, filterPopoverOpen, handleFilterBarToggle, handleDownload]
+    [t, filterPopoverOpen, isDownloading, handleFilterBarToggle, handleDownload]
   );
 
   const rightSideActions = useMemo(
